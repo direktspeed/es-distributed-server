@@ -20,5 +20,13 @@ This Repo will show you how to solve the big data challanges that do arrise via 
 
 Oh By The way this is also the pattern that i use for my serverless http example because this pattern allows you to run serverless functions frictionless with advanced metrics and all the bells and withles
 
+## The Secund Secret of this Implamentation
+The Anything needs to get patched or should offer out of the box a hook for on('insert'|'modify'|CRUD) most best but optional locking would help on scale to squice out even more performance.
+
+## The 3 secret is ?
+Its caching the worker results for example by url as key and return that via a algorythm inside the worker. Sure you could add this directly to your http2 instances but that defeats the Log first algorythm so you gain speed and loose all the benefits of log first if you want to go that route you should do it rule based and only for content that is garantied to exist. Its often not worth doing that.
+
+
+
 
 
